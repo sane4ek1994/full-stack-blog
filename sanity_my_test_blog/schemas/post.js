@@ -25,6 +25,7 @@ export default {
       name: 'image',
       type: 'image',
       title: 'Image',
+      validation: (Rule) => Rule.required(),
       fields: [
         {
           name: 'caption',
@@ -40,6 +41,17 @@ export default {
           title: 'Attribution',
         },
       ],
+    },
+    {
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+      validation: (Rule) => Rule.required(),
+      options: {
+        source: 'title',
+        maxLength: 200, // will be ignored if slugify is set
+        slugify: (input) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
+      },
     },
   ],
 }
