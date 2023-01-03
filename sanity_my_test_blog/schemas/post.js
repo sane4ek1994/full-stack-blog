@@ -12,30 +12,44 @@ export default {
   name: 'post',
   type: 'document',
   title: 'Post',
+  groups: [
+    {
+      name: 'content',
+      title: 'Content',
+    },
+    {
+      name: 'meta',
+      title: 'Meta',
+    },
+  ],
   fields: [
     {
       name: 'meta_title',
       type: 'string',
       title: 'Meta title',
       validation: (Rule) => Rule.required(),
+      group: 'meta',
     },
     {
       name: 'title',
       type: 'string',
       title: 'Title',
       validation: (Rule) => Rule.required(),
+      group: 'content',
     },
     {
       name: 'publishedDate',
       type: 'date',
       title: 'Published Date',
       validation: (Rule) => Rule.required(),
+      group: 'content',
     },
     {
       name: 'image',
       type: 'image',
       title: 'Image',
       validation: (Rule) => Rule.required(),
+      group: 'content',
       fields: [
         {
           name: 'caption',
@@ -56,6 +70,7 @@ export default {
       title: 'Slug',
       name: 'slug',
       type: 'slug',
+      group: 'content',
       validation: (Rule) => Rule.required(),
       options: {
         source: 'title',
@@ -67,12 +82,14 @@ export default {
       title: 'Description',
       name: 'description',
       type: 'text',
+      group: 'content',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'body',
       title: 'Body content',
       type: 'array',
+      group: 'content',
       validation: (Rule) => Rule.required(),
       of: [{type: 'block', styles: textEditorStyles}, {type: 'image'}],
     },
