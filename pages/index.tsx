@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import stylyes from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  return <div className={styles.container}>Start my blog page</div>
+  return <div className={stylyes.container}>Start my blog page</div>
 }
