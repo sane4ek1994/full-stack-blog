@@ -1,5 +1,8 @@
 import React from 'react'
+import cl from 'classnames'
 
-export const Cover = () => {
+import styles from './index.module.scss'
+
+export const Cover = ({ className }) => {
   return <div>Cover</div>
 }

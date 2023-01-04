@@ -1,5 +1,8 @@
 import React from 'react'
+import cl from 'classnames'
 
-export const ScreenEgg = () => {
+import styles from './index.module.scss'
+
+export const ScreenEgg = ({ className }) => {
   return <div>ScreenEgg</div>
 }

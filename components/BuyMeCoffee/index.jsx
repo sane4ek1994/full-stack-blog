@@ -1,5 +1,8 @@
 import React from 'react'
+import cl from 'classnames'
 
-export const ByMeCoffee = () => {
+import styles from './index.module.scss'
+
+export const ByMeCoffee = ({ className }) => {
   return <div>ByMeCoffee</div>
 }

@@ -1,5 +1,8 @@
 import React from 'react'
+import cl from 'classnames'
 
-export const Post = () => {
+import styles from './index.module.scss'
+
+export const Post = ({ className }) => {
   return <div>Post</div>
 }

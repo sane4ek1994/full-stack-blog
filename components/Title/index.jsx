@@ -1,5 +1,8 @@
 import React from 'react'
+import cl from 'classnames'
 
-export const Title = () => {
-  return <div>Title</div>
+import styles from './index.module.scss'
+
+export const Title = ({ className, children }) => {
+  return <h2 className={cl(className, styles.title)}>{children}</h2>
 }

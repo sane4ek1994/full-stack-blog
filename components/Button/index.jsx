@@ -1,5 +1,8 @@
 import React from 'react'
+import cl from 'classnames'
 
-export const Button = () => {
+import styles from './index.module.scss'
+
+export const Button = ({ className }) => {
   return <div>Button</div>
 }

@@ -1,5 +1,8 @@
 import React from 'react'
+import cl from 'classnames'
 
-export const Content = () => {
+import styles from './index.module.scss'
+
+export const Content = ({ className }) => {
   return <div>Content</div>
 }
