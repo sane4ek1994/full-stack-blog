@@ -14,21 +14,19 @@ const socialNetworks = [
   { id: 5, href: 'https://www.linkedin.com/', icon: AiFillLinkedin }
 ]
 
-export const SocialNetworks = ({ className }) => {
-  return (
-    <ScreenEgg>
-      <ul className={cl(className, styles.list)}>
-        {socialNetworks.map(socialNetwork => (
-          <li key={socialNetwork.id} className={styles.listItem}>
-            <a className={styles.listLink} href={socialNetwork.href} target='_blank' rel='noreferrer'>
-              {React.createElement(socialNetwork.icon, {
-                color: 'black',
-                size: 50
-              })}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </ScreenEgg>
-  )
-}
+export const SocialNetworks = ({ className }) => (
+  <ScreenEgg>
+    <ul className={cl(className, styles.list)}>
+      {socialNetworks.map(socialNetwork => (
+        <li key={socialNetwork.id} className={styles.listItem}>
+          <a className={styles.listLink} href={socialNetwork.href} target='_blank' rel='noreferrer'>
+            {React.createElement(socialNetwork.icon, {
+              color: 'black',
+              size: 50
+            })}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </ScreenEgg>
+)
