@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Head from 'next/head'
 import { Section, Cover, SocialNetworks, BuyMeCoffee, Title, PostGrid, Post, Button } from '../components'
 import { loadPosts } from './api/posts'
 
@@ -29,6 +30,9 @@ export default function Home({ initialPosts, total }) {
 
   return (
     <div>
+      <Head>
+        <title>My blog</title>
+      </Head>
       <Section>
         <Cover title='Elena <br/> Litvinova' />
         <SocialNetworks />
