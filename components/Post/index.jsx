@@ -7,8 +7,8 @@ import { urlFor } from '../../lib/client'
 
 import styles from './index.module.scss'
 
-export const Post = ({ className, title, description, image, slug }) => (
-  <Link className={cl(className, styles.post)} href={`/post/${encodeURIComponent(slug.current)}`}>
+export const Post = ({ title, description, image, slug }) => (
+  <Link className={cl(styles.post)} href={`/post/${encodeURIComponent(slug.current)}`}>
     <a className={styles.postLink}>
       <Title type='small' className={styles.postTitle}>
         {title}

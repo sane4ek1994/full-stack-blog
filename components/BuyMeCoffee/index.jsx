@@ -4,11 +4,11 @@ import { ScreenEgg } from '../ScreenEgg'
 
 import styles from './index.module.scss'
 
-export const BuyMeCoffee = ({ className }) => (
+export const BuyMeCoffee = () => (
   <ScreenEgg type='right'>
-    <div className={cl(className, styles.buyCoffee)}>
+    <div className={cl(styles.buyCoffee)}>
       <a
-        className={styles.buyCoffeeButton}
+        className={styles.buttonBuyCoffee}
         rel='noreferrer'
         href='https://buy.stripe.com/test_7sI29p5r31W5geYeUU'
         target='_blank'

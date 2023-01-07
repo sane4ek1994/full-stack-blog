@@ -1,16 +1,14 @@
-.list {
-    &Item {
-        margin-bottom: 0.5em;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
+.link {
+    transition: opacity 0.3s;
+    &:hover {
+        opacity: 0.6;
     }
+}
 
-    &Link {
-        transition: opacity 0.3s;
-        &:hover {
-            opacity: 0.6;
-        }
+.item {
+    margin-bottom: 0.5em;
+
+    &:last-child {
+        margin-bottom: 0;
     }
 }

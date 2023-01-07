@@ -16,38 +16,38 @@
         transition: width 0.3s;
     }
 
-    &Small {
-        font-size: 2rem;
-        line-height: 1.2;
+}
 
-        &::after {
-            width: 0;
-        }
+.medium {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1em;
+
+    &::after {
+        width: calc(100% + 2rem);
     }
+}
 
-    &Medium {
-        font-size: 3.5rem;
-        line-height: 1.2;
-        margin-bottom: 1em;
+.small {
+    font-size: 2rem;
+    line-height: 1.2;
 
-        &::after {
-            width: calc(100% + 2rem);
-        }
+    &::after {
+        width: 0;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .title {
-        &Small {
-            font-size: 1.5rem;
-        }
 
-        &Medium {
-            font-size: 2.5rem;
+    .small {
+        font-size: 1.5rem;
+    }
 
-            &::after {
-                width: 100%;
-            }
+    .medium {
+        font-size: 2.5rem;
+
+        &::after {
+            width: 100%;
         }
     }
 }
