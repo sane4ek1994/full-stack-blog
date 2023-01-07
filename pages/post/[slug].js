@@ -5,7 +5,7 @@ import Head from 'next/head'
 import { client } from '../../lib/client'
 import styles from './styles.module.scss'
 
-const Post = ({ post }) => {
+export default function Post({ post }) {
   const date = format(new Date(post.publishedDate), 'dd MMM yyyy')
 
   return (
@@ -19,8 +19,6 @@ const Post = ({ post }) => {
     </Article>
   )
 }
-
-export default Post
 
 export async function getStaticPaths() {
   const query = `*[type == 'post'] {
