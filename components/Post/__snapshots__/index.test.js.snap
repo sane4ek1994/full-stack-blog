@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render Post component 1`] = `
+<ForwardRef(LinkComponent)
+  className="post"
+  href="/post/additional-post"
+>
+  <a
+    className="postLink"
+  >
+    <Title
+      className="postTitle"
+      type="small"
+    >
+      Additional post
+    </Title>
+    <div
+      className="postContent"
+    >
+      <div>
+        <Image
+          height="100"
+          src="https://cdn.sanity.io/images/xu6emnmj/production/17019027e1c135d42a7d79d9529b6463856eb408-119x124.svg"
+          width="100"
+        />
+      </div>
+      <p
+        className="postDescription"
+      >
+        text
+      </p>
+    </div>
+  </a>
+</ForwardRef(LinkComponent)>
+`;
