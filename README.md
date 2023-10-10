@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Full Stack Blog Application Documentation
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+This document provides a concise overview of the **full_stack_blog** application, outlining its scripts, dependencies, and devDependencies.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Scripts
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `dev`: Start the development server with Next.js.
+- `build`: Build the Next.js application.
+- `start`: Start the Next.js application in production mode.
+- `lint`: Run linting for the project.
+- `test`: Run tests using Jest with the watch mode.
+- `test:ci`: Run Jest tests in continuous integration mode.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Dependencies
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- `@sanity/block-content-to-react`: Version 3.0.0
+- `@sanity/client`: Version 3.4.1
+- `@sanity/image-url`: Version 1.0.1
+- `classnames`: Version 2.3.2
+- `date-fns`: Version 2.29.3
+- `next`: Version 12.3.1
+- `next-sanity-image`: Version 4.1.0
+- `react`: Version 18.2.0
+- `react-dom`: Version 18.2.0
+- `react-icons`: Version 4.4.0
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## DevDependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `@cfaester/enzyme-adapter-react-18`: Version 0.6.0
+- `@testing-library/jest-dom`: Latest version
+- `@testing-library/react`: Latest version
+- `@testing-library/user-event`: Latest version
+- `@types/jest`: Version 29.2.5
+- `@types/node`: Version 18.11.18
+- `@types/react`: Version 18.0.26
+- `@types/testing-library__jest-dom`: Latest version
+- `babel-jest`: Version 29.3.1
+- `enzyme`: Version 3.11.0
+- `enzyme-to-json`: Version 3.6.2
+- `eslint`: Version 8.24.0
+- `eslint-config-next`: Version 12.3.1
+- `jest`: Version 29.3.1
+- `jest-environment-jsdom`: Version 29.3.1
+- `sass`: Version 1.55.0
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This summary includes the essential information about the **full_stack_blog** application, including scripts, dependencies, and devDependencies.
