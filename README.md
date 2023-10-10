@@ -26,23 +26,4 @@ This document provides a concise overview of the **full_stack_blog** application
 - `react-dom`: Version 18.2.0
 - `react-icons`: Version 4.4.0
 
-## DevDependencies
-
-- `@cfaester/enzyme-adapter-react-18`: Version 0.6.0
-- `@testing-library/jest-dom`: Latest version
-- `@testing-library/react`: Latest version
-- `@testing-library/user-event`: Latest version
-- `@types/jest`: Version 29.2.5
-- `@types/node`: Version 18.11.18
-- `@types/react`: Version 18.0.26
-- `@types/testing-library__jest-dom`: Latest version
-- `babel-jest`: Version 29.3.1
-- `enzyme`: Version 3.11.0
-- `enzyme-to-json`: Version 3.6.2
-- `eslint`: Version 8.24.0
-- `eslint-config-next`: Version 12.3.1
-- `jest`: Version 29.3.1
-- `jest-environment-jsdom`: Version 29.3.1
-- `sass`: Version 1.55.0
-
-This summary includes the essential information about the **full_stack_blog** application, including scripts, dependencies, and devDependencies.
+This summary includes the essential information about the **full_stack_blog** application, including scripts, dependencies.
